@@ -9,4 +9,8 @@ class AuthRepository {
       MockDB().signUp(email, password);
 
   Future<void> signOut() async {}
+
+  Future<bool> hasUser() async => MockDB().user != null;
+
+  Future<User?> getUser() async => MockDB().user;
 }

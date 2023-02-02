@@ -2,7 +2,7 @@ import 'package:flutter_architecture/src/data/mockdb/mockdb.dart';
 import 'package:flutter_architecture/src/data/models/user.dart';
 import 'package:flutter_architecture/src/data/repositories/auth.dart';
 import 'package:flutter_architecture/src/logic/value_broadcast_notifier.dart';
-import 'package:flutter_architecture/src/logic/utils/utils.dart';
+import 'package:flutter_architecture/src/logic/services/text_field_validator.dart';
 
 enum SignInStates {
   loading,
@@ -26,17 +26,17 @@ class SignInBloc extends ValueBroadcastNotifier<SignInBloc, SignInStates?> {
   Future<SignInStates> _signIn(String? email, String? password) async {
     try {
       //Optional checks to lower bad requests
-      if (Utils.isEmptyOrNull(email)) {
+      if (TextFieldValidator.isEmptyOrNull(email)) {
         return SignInStates.incorrectEmailOrPassword;
       }
 
-      if (Utils.isEmptyOrNull(password)) {
+      if (TextFieldValidator.isEmptyOrNull(password)) {
         return SignInStates.incorrectEmailOrPassword;
       }
 
       final trimmedEmail = email!.trim();
 
-      if (!Utils.isValidEmail(trimmedEmail)) {
+      if (!TextFieldValidator.isValidEmail(trimmedEmail)) {
         return SignInStates.incorrectEmailOrPassword;
       }
 

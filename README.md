@@ -9,6 +9,7 @@ Presentation
 * Wrappers
 * Pages
 * Navigation
+* Theme
 
 Logic
 * Blocs

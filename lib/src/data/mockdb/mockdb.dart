@@ -22,6 +22,8 @@ class MockDB {
 
   late User? _user = const User('Super new user');
 
+  User? get user => _user;
+
   User? signIn(String email, String password) {
     /*if (_user == null) {
       throw const MockDBException('user-not-found');

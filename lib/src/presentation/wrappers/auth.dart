@@ -15,10 +15,13 @@ class AuthWrapper extends StatelessWidget {
       body: ValueListenableBuilder(
         valueListenable: _authBloc,
         builder: (context, value, child) {
-          if (value == AuthStates.unauthenticated) {
-            return SPABuilder(spaNavigator: AuthSPANavigator());
+          if (value == AuthStates.loading) {
+            return const CircularProgressIndicator();
           }
-          return BookPage();
+          if (value == AuthStates.authenticated) {
+            return BookPage();
+          }
+          return SPABuilder(spaNavigator: AuthSPANavigator());
         },
       ),
     );

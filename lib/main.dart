@@ -2,9 +2,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture/src/presentation/extensions/build_context.dart';
 import 'package:flutter_architecture/src/presentation/navigation/router.dart';
+import 'package:flutter_architecture/src/presentation/theme/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-void main()  {
+void main() {
   //await myErrorsHandler.initialize();
   FlutterError.onError = (details) {
     FlutterError.presentError(details);
@@ -28,9 +29,8 @@ class MyApp extends StatelessWidget {
       onGenerateTitle: (context) => context.intl.title,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: AppTheme.theme,
+      darkTheme: AppTheme.darkTheme,
     );
   }
 }
