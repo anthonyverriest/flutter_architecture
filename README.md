@@ -9,15 +9,15 @@ No packages are used in this example hence lowering the dependencies.
 
 #### build_context
 
-Syntactic sugar for methods that relies on the build context.
+Syntactic sugar for methods that rely on the build context.
 
 #### SPABuilder
 
-Inherited widget that contains a SPANavigator accessible through context.spaNavigator<T>.
+Inherited widget that contains a SPANavigator accessible through *context.spaNavigator\<T\>*.
 
 #### SPANavigator
 
-Holds the current SPA page to show on screen. It will trigger an SPABuilder when the value changes.
+Holds the current page to show on screen. It will trigger the related SPABuilder when the value changes.
 
 #### ValueBroadcastNotifier
 
