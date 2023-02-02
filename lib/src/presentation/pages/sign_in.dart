@@ -88,7 +88,7 @@ class _SignInState extends State<_SignIn> {
                       borderRadius:
                           BorderRadius.circular(AppTheme.kBorderRadius),
                       side: BorderSide(
-                        color: Colors.red[200]!,
+                        color: Colors.red[400]!,
                       ),
                     ),
                     child: Padding(

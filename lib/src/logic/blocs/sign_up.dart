@@ -30,6 +30,8 @@ class SignUpBloc extends ValueNotifier<SignUpStates?> {
         return SignUpStates.defaultError;
       }
 
+      //SEND CONF MAIL
+
       await _authRepository.signOut();
 
       return SignUpStates.success;

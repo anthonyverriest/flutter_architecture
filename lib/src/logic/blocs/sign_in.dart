@@ -46,6 +46,8 @@ class SignInBloc extends ValueBroadcastNotifier<SignInBloc, SignInStates?> {
         return SignInStates.defaultError;
       }
 
+      //CHECK CONF MAIL
+
       return SignInStates.success;
     } on MockDBException catch (e) {
       if (e.toString() == 'user-not-found') {
