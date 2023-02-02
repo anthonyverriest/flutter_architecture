@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_architecture/src/logic/blocs/sign_up.dart';
 import 'package:flutter_architecture/src/logic/utils/utils.dart';
 import 'package:flutter_architecture/src/presentation/extensions/build_context.dart';
-import 'package:flutter_architecture/src/presentation/navigation/router.dart';
+import 'package:flutter_architecture/src/presentation/navigation/auth.dart';
 import 'package:flutter_architecture/src/presentation/pages/sign_in.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -135,8 +135,9 @@ class _SignUpState extends State<SignUpPage> {
                   children: [
                     Text('${context.intl.alreadyHaveAccount} '),
                     InkWell(
-                      onTap: () =>
-                          AppRouter.authSPANavigator.goTo(SignInPage.routeName),
+                      onTap: () => context
+                          .spaNavigator<AuthSPANavigator>()
+                          .goTo(SignInPage.routeName),
                       child: Text(context.intl.signIn),
                     ),
                   ],
