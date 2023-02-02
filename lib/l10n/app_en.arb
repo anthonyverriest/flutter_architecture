@@ -1,0 +1,60 @@
+{
+  "@@locale" : "en",
+
+  "alreadyHaveAccount": "Already have an account ?",
+  "@alreadyHaveAccount": {
+    "description": "Sign in message"
+  },
+  "confirmPassword": "Confirm password",
+  "@confirmPassword": {
+    "description": "Confirm password"
+  },
+  "confirmPasswordNotMatching": "Passwords do not match",
+  "@confirmPasswordNotMatching": {
+    "description": "Error message for non matching passwords"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email address"
+  },
+  "incorrectEmailOrPassword": "Incorrect email or password",
+  "@incorrectEmailOrPassword": {
+    "description": "Error message for an inccorect email or password"
+  },
+  "invalidEmailOrAlreadyTaken" : "Email is invalid or already taken",
+  "@invalidEmailOrAlreadyTaken": {
+    "description": "Error message for an invaid or already taken email"
+  },
+  "noAccount": "New ?",
+  "@noAccount": {
+    "description": "Sign up message"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password"
+  },
+  "requiredTextField": "Required field",
+  "@requiredTextField": {
+    "description": "Error message for an empty required text field"
+  },
+  "signIn": "Sign in",
+  "@signIn": {
+    "description": "Sign in"
+  },
+  "signUp": "Sign up",
+  "@signUp": {
+    "description": "Sign up"
+  },
+  "somethingWentWrong": "Something went wrong",
+  "@somethingWentWrong": {
+    "description": "Default error message"
+  },
+  "title": "Books",
+  "@title": {
+    "description": "The title of the app"
+  },
+  "weakPassword": "The password must be at least 6 characters long",
+  "@weakPassword": {
+    "description" : "Error message for an invalid password"
+  }
+}

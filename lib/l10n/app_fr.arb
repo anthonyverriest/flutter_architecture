@@ -1,0 +1,18 @@
+{
+    "@@locale" : "fr",
+
+    "alreadyHaveAccount": "Déjà inscrit(e) ?",
+    "confirmPassword": "Confirmer le mot de passe",
+    "confirmPasswordNotMatching": "Les mots de passe ne sont pas identiques",
+    "email": "Email",
+    "incorrectEmailOrPassword": "Email ou mot de passe incorrect",
+    "invalidEmailOrAlreadyTaken": "Email non valide ou déjà pris",
+    "noAccount": "Nouveau ?",
+    "password": "Mot de passe",
+    "requiredTextField": "Champ obligatoire",
+    "signIn": "S'identifier",
+    "signUp": "S'inscrire",
+    "somethingWentWrong": "Une erreur est survenue",
+    "title": "Books",
+    "weakPassword": "Le mot de passe doit comporter au moins 6 caractères"
+}
