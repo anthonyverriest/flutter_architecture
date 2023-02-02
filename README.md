@@ -2,8 +2,6 @@
 
 A Flutter Example Architecture project.
 
-No packages are used in this example hence lowering the dependencies.
-
 ## Architecture: 
 **Presentation -> Logic -> Data**
 
@@ -35,7 +33,7 @@ Holds the current page to show on screen. It will trigger the related SPABuilder
 
 #### ValueBroadcastNotifier
 
-It does the same as ValueNotifier but also calls the *send* method of the ValueMessenger when notifying the listenners.
+It does the same as ValueNotifier but also calls the *send* method of the ValueMessenger when notifying the listeners.
 
 #### ValueMessenger
 
