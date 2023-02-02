@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
 abstract class SPANavigator {
-  final Map<String, Widget Function()> routes;
+  final Map<String, Widget Function()> _routes;
 
   late Widget route;
   late ValueNotifier<String> notifier;
 
-  SPANavigator(this.routes, String initialRouteName) {
-    route = routes[initialRouteName]!();
+  SPANavigator(this._routes, String initialRouteName) {
+    route = _routes[initialRouteName]!();
 
     notifier = ValueNotifier<String>(initialRouteName);
   }
 
   void goTo(String routeName) {
-    assert(routes.containsKey(routeName));
+    assert(_routes.containsKey(routeName));
 
-    route = routes[routeName]!();
+    route = _routes[routeName]!();
 
     notifier.value = routeName;
   }
