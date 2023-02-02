@@ -7,13 +7,25 @@ No packages are used in this example hence lowering the dependencies.
 ## Architecture: 
 **Presentation -> Logic -> Data**
 
+Presentation
+* Wrappers
+* Pages
+* Navigation
+Logic
+* Blocs
+* Services
+Data
+* Repositories
+* Providers
+* Models
+
 #### build_context
 
 Syntactic sugar for methods that rely on the build context.
 
 #### SPABuilder
 
-Inherited widget that contains a SPANavigator accessible through *context.spaNavigator\<T\>*.
+Inherited widget that contains a SPANavigator accessible through *context.spaNavigator\<T\>* and draws the page widget.
 
 #### SPANavigator
 
